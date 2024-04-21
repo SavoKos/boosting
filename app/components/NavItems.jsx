@@ -34,28 +34,15 @@ function NavItems({ className, active }) {
         >
           Contact
         </Link>
-        <div className='p-1 bg-transparent border-solid border-gray-700 border-[1px] rounded-md'>
-          <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-4 py-2 rounded-md'>
-            Login
+        <Link href='/login'>
+          <div className='p-1 bg-transparent border-solid border-gray-700 border-[1px] rounded-md cursor-pointer'>
+            <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-4 py-2 rounded-md'>
+              Login
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
-
-    // <div className='flex items-center h-full'>
-    // <div className='flex items-center justify-center gap-7  m-auto'>
-    //   <Link href='/'>Home</Link>
-    //   <Link href='/divisionboosting'>Division Boosting</Link>
-    //   <Link href='/netwins'>Net Wins</Link>
-    //   <Link href='/placementgames'>Placement games</Link>
-    //   <Link href='/contact'>Contact</Link>
-    //   <div className='p-1 bg-transparent border-solid border-gray-700 border-[1px] rounded-md'>
-    //     <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-4 py-2 rounded-md'>
-    //       Login
-    //     </div>
-    //   </div>
-    // </div>
-    // </div>
   );
 }
 

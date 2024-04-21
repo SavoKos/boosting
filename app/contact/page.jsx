@@ -37,11 +37,11 @@ function Contact() {
           <div class='div-forh1'>
             <div class='firsth1'>
               <h1>Your Name</h1>
-              <input type='text' placeholder='' />
+              <input type='text' placeholder='' className='inp' />
             </div>
             <div class='secondh1'>
               <h1>Your Email</h1>
-              <input type='text' placeholder='' />
+              <input type='text' placeholder='' className='inp' />
             </div>
           </div>
 

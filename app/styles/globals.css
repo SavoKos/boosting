@@ -683,7 +683,7 @@ section {
   cursor: text;
   text-rendering: auto;
 }
-input:focus {
+.inp:focus {
   text-align: start;
   margin-left: 25px;
   width: 85%;

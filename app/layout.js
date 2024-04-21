@@ -1,6 +1,10 @@
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Zen_Dots, Readex_Pro } from 'next/font/google';
+import './styles/globals.css';
+const zendots = Zen_Dots({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--zendots',
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={zendots.className}>{children}</body>
     </html>
   );
 }

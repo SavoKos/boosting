@@ -44,7 +44,7 @@ export default function Netwins() {
   return (
     <div className='flex flex-col md:flex-row max-w-screen-xl m-auto'>
       <div className='flex md:w-1/2 flex-col lg:flex-row'>
-        <div className='bg-pink rounded-2xl p-5 border-primary-blue border-4 h-fit w-1/2'>
+        <div className='bg-pink rounded-2xl p-5 border-primary-blue border-4 h-fit w-full'>
           <div className='flex items-center gap-3 mb-5'>
             <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
             <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
@@ -147,7 +147,7 @@ export default function Netwins() {
           </div>
         </div>
 
-        <div className='bg-pink rounded-2xl p-5 flex-col flex border-primary-blue border-4 h-fit w-1/2 gap-5'>
+        <div className='bg-pink rounded-2xl p-5 flex-col flex border-primary-blue border-4 h-fit w-full gap-5'>
           <div className='w-full '>
             <div className='flex items-center gap-3 mb-5 '>
               <div className='bg-primary-blue rounded-lg w-8 h-8'></div>

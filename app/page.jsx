@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
 
-function page() {
+function Home() {
   const [activeText, setActiveText] = useState(1);
   return (
     <div>
@@ -286,4 +286,4 @@ function page() {
   );
 }
 
-export default page;
+export default Home;

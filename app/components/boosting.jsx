@@ -283,13 +283,10 @@ export default function Home() {
               }}
             >
               <option className='font-light' value='1'>
-                10-19
+                Solo/Duo
               </option>
               <option className='font-light' value='2'>
-                20-24
-              </option>
-              <option className='font-light' value='3'>
-                25+
+                Flex
               </option>
             </select>
           </div>

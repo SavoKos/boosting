@@ -16,7 +16,7 @@ function Home() {
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores.
             </h3>
-            <button>BOOSTING</button>
+            <button className='btn'>BOOSTING</button>
           </div>
 
           <div className='image-1 w-1/2'>
@@ -47,7 +47,7 @@ function Home() {
           </div>
 
           <div className='text-2 w-1/2'>
-            <button className='button-text-2'>About Us</button>
+            <button className='button-text-2 btn'>About Us</button>
             <h1>Ipsum Lorem</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
@@ -57,7 +57,7 @@ function Home() {
               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in
             </p>
-            <button className='button-text-21'>Boosting options</button>
+            <button className='button-text-21 btn'>Boosting options</button>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ function Home() {
       <section>
         <div className='div-main' id='scroll-section'>
           <div className='button'>
-            <button>Boosting</button>
+            <button className='btn'>Boosting</button>
           </div>
           <div className='text-3'>
             <h1>Lorem Ipsum Lorem</h1>
@@ -94,7 +94,7 @@ function Home() {
               </p>
             </div>
             <div className='button-for-grid'>
-              <button className='buty'>division busting</button>
+              <button className='buty btn'>division busting</button>
             </div>
             <div className='h2-for-grid'>
               <h2 className='huty'>01</h2>
@@ -115,7 +115,7 @@ function Home() {
             </div>
 
             <div className='button-for-grid'>
-              <button className='buty'>Net Wins</button>
+              <button className='buty btn'>Net Wins</button>
             </div>
             <div className='h2-for-grid'>
               <h2 className='huty'>02</h2>
@@ -136,7 +136,7 @@ function Home() {
             </div>
 
             <div className='button-for-grid'>
-              <button className='buty'>Placement Games</button>
+              <button className='buty btn'>Placement Games</button>
             </div>
             <div className='h2-for-grid'>
               <h2 className='huty'>03</h2>
@@ -148,7 +148,7 @@ function Home() {
       <section>
         <div className='div-main1' style={{ marginTop: '330px' }}>
           <div className='button1'>
-            <button>loren</button>
+            <button className='btn'>loren</button>
           </div>
           <div className='text-3'>
             <h1>
@@ -184,7 +184,7 @@ function Home() {
       <section>
         <div className='div-main2'>
           <div className='button1'>
-            <button>loren</button>
+            <button btn>loren</button>
           </div>
           <div className='text-3'>
             <h1>
@@ -198,28 +198,28 @@ function Home() {
             </div>
             <div className='container1'>
               <button
-                className='button2'
+                className='button2 btn'
                 id='button1'
                 onClick={() => setActiveText(1)}
               >
                 Button 1
               </button>
               <button
-                className='button2'
+                className='button2 btn'
                 id='button2'
                 onClick={() => setActiveText(2)}
               >
                 Button 2
               </button>
               <button
-                className='button2'
+                className='button2 btn'
                 id='button3'
                 onClick={() => setActiveText(3)}
               >
                 Button 3
               </button>
               <button
-                className='button2'
+                className='button2 btn'
                 id='button4'
                 onClick={() => setActiveText(4)}
               >
@@ -245,7 +245,7 @@ function Home() {
           </div>
 
           <div className='hahhh21'>
-            <button>Send</button>
+            <button className='btn'>Send</button>
           </div>
         </div>
         <div className='conright1-div'>

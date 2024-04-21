@@ -5,28 +5,26 @@ import Switch from '../components/switch';
 import { FaSackDollar } from 'react-icons/fa6';
 import { useEffect, useState } from 'react';
 
-export default function Netwins() {
+export default function PlacementGamesLogic() {
   const [numOfGames, setNumOfGames] = useState(1);
   const [rank, setRank] = useState('5');
   const [division, setDivision] = useState('0');
   const [additionalPercent, setAdditionalPercent] = useState(1);
   const [total, setTotal] = useState(0);
   const prices = [
-    0.89, 0.89, 0.89, 0.89, 0.92, 0.92, 0.92, 0.92, 1.04, 1.12, 1.57, 1.94,
-    2.32, 2.32, 2.62, 3.07, 3.74, 3.74, 4.04, 4.49, 4.57, 4.64, 4.79, 4.87,
-    5.24, 7.72, 9.44, 10.87, 21.65, 27.79, 33.07,
+    2.09, 1.04, 1.12, 1.79, 2.24, 2.99, 3.74, 3.89, 4.19, 4.34, 4.49, 5.84,
+    7.49, 8.62,
   ];
 
-  console.log(rank, division);
   const [slicedPrices, setSlicedPrices] = useState(prices);
+  console.log(rank, division, slicedPrices);
 
   useEffect(() => {
-    if (rank > 6)
+    if (rank > 7)
       return setSlicedPrices(
-        [...prices].slice(0, 7 * 4 + division * 1 + 1 + (rank * 1 - 7))
+        [...prices].slice(0, rank * 1 + 3 + division * 1 + 1)
       );
-
-    setSlicedPrices([...prices].slice(0, rank * 4 + division * 1 + 1));
+    setSlicedPrices([...prices].slice(0, rank * 1 + division * 1 + 1));
   }, [rank, division, numOfGames]);
 
   useEffect(() => {
@@ -48,7 +46,7 @@ export default function Netwins() {
           <div className='flex items-center gap-3 mb-5'>
             <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
             <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
-              Rank
+              Last known rank
             </h3>
           </div>
           <div>
@@ -62,76 +60,57 @@ export default function Netwins() {
               }}
             >
               <option className='font-light' value='0'>
-                Iron
+                Unranked
               </option>
               <option className='font-light' value='1'>
-                Bronze
+                Iron
               </option>
               <option className='font-light' value='2'>
-                Silver
+                Bronze
               </option>
               <option className='font-light' value='3'>
-                Gold
+                Silver
               </option>
               <option className='font-light' value='4'>
+                Gold
+              </option>
+              <option className='font-light' value='5'>
                 Platinum
               </option>
-              <option className='font-light' value='5' selected>
+              <option className='font-light' value='6' selected>
                 Emerald
               </option>
-              <option className='font-light' value='6'>
+              <option className='font-light' value='7'>
                 Diamond
               </option>
-              <option className='font-light' value='7'>
+              <option className='font-light' value='8'>
                 Master
               </option>
-              <option className='font-light' value='8'>
+              <option className='font-light' value='9'>
                 Grandmaster
               </option>
-              <option className='font-light' value='9'>
+              <option className='font-light' value='10'>
                 Challenger
               </option>
             </select>
           </div>
-          <div>
-            <div className='flex items-center gap-3 my-5'>
-              <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
-              <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
-                Division
-              </h3>
-            </div>
+          {rank == 7 && (
             <div>
-              <select
-                className='block w-full max-w-64 m-auto mt-3 p-3 text-base font-ReadexPro font-light'
-                name=''
-                id=''
-                onChange={(e) => {
-                  setDivision(e.target.value);
-                }}
-              >
-                {Number(rank) <= 6 && (
-                  <>
-                    <option
-                      className='font-light'
-                      name=''
-                      id=''
-                      value='0'
-                      selected
-                    >
-                      Division IV
-                    </option>
-                    <option className='font-light' name='' id='' value='1'>
-                      Division III
-                    </option>
-                    <option className='font-light' name='' id='' value='2'>
-                      Division II
-                    </option>
-                    <option className='font-light' name='' id='' value='3'>
-                      Division I
-                    </option>
-                  </>
-                )}
-                {Number(rank) > 6 && (
+              <div className='flex items-center gap-3 my-5'>
+                <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
+                <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
+                  Division
+                </h3>
+              </div>
+              <div>
+                <select
+                  className='block w-full max-w-64 m-auto mt-3 p-3 text-base font-ReadexPro font-light'
+                  name=''
+                  id=''
+                  onChange={(e) => {
+                    setDivision(e.target.value);
+                  }}
+                >
                   <option
                     className='font-light'
                     name=''
@@ -139,12 +118,21 @@ export default function Netwins() {
                     value='0'
                     selected
                   >
+                    Division IV
+                  </option>
+                  <option className='font-light' name='' id='' value='1'>
+                    Division III
+                  </option>
+                  <option className='font-light' name='' id='' value='2'>
+                    Division II
+                  </option>
+                  <option className='font-light' name='' id='' value='3'>
                     Division I
                   </option>
-                )}
-              </select>
+                </select>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className='bg-pink rounded-2xl p-5 flex-col flex border-primary-blue border-4 h-fit w-full gap-5'>
@@ -216,6 +204,12 @@ export default function Netwins() {
               </option>
               <option className='font-light' value='3'>
                 3
+              </option>
+              <option className='font-light' value='4'>
+                4
+              </option>
+              <option className='font-light' value='5'>
+                5
               </option>
             </select>
           </div>

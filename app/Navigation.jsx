@@ -12,11 +12,11 @@ function Navigation({ active }) {
   return (
     <nav className='bg-primary-blue text-white py-5 px-7 flex items-center justify-between md:justify-center gap-7 font-ZenDots'>
       <Image
-        src='/logo-placeholder.png'
+        src='/b4y.png'
         width={200}
         height={100}
         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-        className='w-[100px] lg:w-[200px]'
+        className='w-[100px] lg:w-[150px]'
       />
       <NavItems className='hidden md:flex' active={active} />
       <IoMenuOutline

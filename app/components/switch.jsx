@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Switch as S } from '@headlessui/react';
 
-function switchui({ changeTotal, additionalPercent }) {
+function Switchui({ changeTotal, additionalPercent }) {
   const [enabled, setEnabled] = useState(false);
 
   const handleChange = () => {
@@ -27,4 +27,4 @@ function switchui({ changeTotal, additionalPercent }) {
   );
 }
 
-export default switchui;
+export default Switchui;

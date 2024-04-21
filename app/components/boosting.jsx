@@ -354,8 +354,8 @@ export default function Home() {
               PURCHASE
             </div>
             <p className='font-ReadexPro font-medium text-base mt-5'>
-              DISCLAIMER: If the mmr doesn't match displayed rank, price has to
-              be adjusted
+              DISCLAIMER: If the mmr doesn&apos;t match displayed rank, price
+              has to be adjusted
             </p>
           </>
         )}

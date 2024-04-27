@@ -16,7 +16,6 @@ header {
 }
 
 .zen-dots-regular {
-  font-family: 'Zen Dots', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -41,7 +40,6 @@ header {
   display: inline;
   margin-left: 23px;
   font-size: 18px;
-  font-family: 'Zen Dots', sans-serif;
 }
 
 .header-links ul li:last-child {
@@ -79,7 +77,6 @@ header {
   font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
 }
 
 .login-button:hover {
@@ -102,7 +99,6 @@ body {
 
 .text-1 {
   justify-content: space-between;
-  padding-left: 60px;
 }
 
 .image-1 {
@@ -112,8 +108,6 @@ body {
 .text-1 h1 {
   color: white;
   font-size: 50px;
-  margin-top: 250px;
-  font-family: 'Zen Dots', sans-serif;
   line-height: 70px;
   font-size: 50px;
   font-weight: 500;
@@ -123,28 +117,8 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 300;
-  font-family: 'Readex Pro', sans-serif;
   font-weight: 300;
   line-height: 22.4px;
-}
-
-.text-1 button {
-  background-image: linear-gradient(
-    to top right,
-    rgba(112, 63, 254, 255),
-    white
-  );
-  border: none;
-  color: white;
-  padding: 17px 27px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 20px;
-  font-family: 'Zen Dots', sans-serif;
-  margin-top: 30px;
 }
 
 .text-1 button:hover {
@@ -157,39 +131,29 @@ body {
 
 .behind-home {
   z-index: 1;
-  height: 812px;
-  width: 736px;
 }
 .main-image {
   z-index: 2;
-  height: 598px;
-  width: 498px;
-  margin-top: -705px;
-  margin-left: 145px;
-  border-radius: 140px;
+  border-radius: 100px;
+  max-width: 438px;
+  height: 77%;
+  left: 95px;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
 }
 
 .behind-home-2 {
   z-index: 1;
-  height: 536px;
-  width: 536px;
-  margin-bottom: 100px;
-  margin-left: 100px;
 }
 
 .main-image-2 {
   z-index: 2;
-  height: 498px;
-  width: 498px;
-  margin-top: -605px;
-  margin-left: 100px;
   border-radius: 40px;
 }
 
 .text-2 {
   color: white;
-  padding-left: 50px;
-  padding-top: 100px;
 }
 
 .text-2 h1 {
@@ -197,14 +161,12 @@ body {
 }
 
 .image-2 {
-  margin-left: 40px;
   margin-bottom: 20px;
 }
 
 section {
   justify-content: center;
   align-items: center;
-  height: 200px;
   margin-top: 40px;
 }
 
@@ -225,6 +187,10 @@ section {
   gap: 20px;
 }
 
+.btn {
+  @apply text-pink border-[1px] border-gray-700 bg-gray-600 bg-opacity-30 rounded-full;
+}
+
 .maind {
   text-align: center;
   display: grid;
@@ -241,7 +207,6 @@ section {
   text-decoration: none;
   border-radius: 50px;
   cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
   margin-top: 20px;
   font-size: 12px;
   font-weight: 400;
@@ -262,7 +227,6 @@ section {
   font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
   margin-top: 30px;
   border: 1px solid white;
   border-spacing: 30px;
@@ -276,45 +240,19 @@ section {
   );
 }
 
-.btn {
-  background-color: rgba(20, 22, 52, 4);
-  border: 0.5px solid rgba(255, 255, 255, 0.1);
-  color: #703ffe;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.43rem;
-}
-
 .text-3 h1 {
   font-size: 40px;
   color: white;
-  font-family: 'Zen Dots', sans-serif;
 }
 
 .text-4 h2 {
   color: white;
   font-size: 16px;
   font-weight: 300;
-  font-family: 'Readex Pro', sans-serif;
   font-weight: 300;
   line-height: 22.4px;
 }
 .spaicer {
-  margin-bottom: 200px;
-}
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 349px 349px 349px;
-  grid-gap: 15px;
-  padding: 10px;
-  justify-content: center;
   margin-bottom: 200px;
 }
 
@@ -350,7 +288,6 @@ section {
 }
 .diffrent-colordiv h3 {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -393,7 +330,6 @@ section {
   font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
   font-weight: 400;
   line-height: 18px;
   margin-top: 30px;
@@ -404,7 +340,6 @@ section {
 .huty {
   color: #20233f;
   font-size: 50px;
-  font-family: 'Zen Dots', sans-serif;
   font-weight: 400;
   display: block;
 }
@@ -424,8 +359,6 @@ section {
   padding: 20px;
   position: relative;
   margin-bottom: 20px;
-  margin-left: 290px;
-  margin-right: 290px;
   height: 80px;
   overflow: hidden; /* Hide overflow to prevent flaps from extending beyond container */
 }
@@ -461,7 +394,6 @@ section {
   font-size: 20px;
   color: #fff;
   margin-top: -30px;
-  font-family: 'Zen Dots', sans-serif;
   font-weight: 300;
   line-height: 1.4rem;
 }
@@ -470,7 +402,6 @@ section {
   margin-bottom: -50px;
   margin-left: -74px;
   margin-top: -20px;
-  font-family: 'Readex Pro', sans-serif;
   font-size: 16px;
   color: #fff;
   font-weight: 300;
@@ -495,7 +426,6 @@ section {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  font-family: 'Zen Dots', sans-serif;
 }
 
 .button2:hover {
@@ -519,37 +449,15 @@ section {
   font-size: 18px;
   margin-bottom: 10px;
   color: white;
-  font-family: 'Readex Pro', sans-serif;
 }
 
 .paragraph {
   margin-bottom: -50px;
   margin-top: -20px;
-  font-family: 'Readex Pro', sans-serif;
   font-size: 16px;
   color: #fff;
   font-weight: 300;
   line-height: 1.4rem;
-}
-
-.cfirst {
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cinner {
-  background-image: linear-gradient(to right, #612efe, #b797ff);
-  border-radius: 30px;
-}
-
-.cinner h1 {
-  padding: 40px 280px;
-  font-size: 50px;
-  font-weight: 500;
-  font-family: 'Zen Dots', sans-serif;
-  color: white;
 }
 
 .cseccond {
@@ -561,52 +469,29 @@ section {
 }
 .getbutton {
   margin-bottom: 40px;
-  padding: 5px;
-  font-family: 'Zen Dots', sans-serif;
+  padding: 6px 20px;
   font-size: 16px;
   font-weight: 400;
 }
 .cfirsth1 {
-  font-family: 'Zen Dots', sans-serif;
-  font-size: 40px;
   font-weight: 500;
   color: white;
 }
 
 .contactus-div {
-  height: 600px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.conleft-div {
-  background-color: #191e4f;
-  width: 400px;
-  height: 550px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-right: 1px solid #2b305d;
-}
-
-.conright-div {
-  background-color: #191e4f;
-  width: 700px;
-  height: 550px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
 .div-forh2 h2 {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  padding: 15px;
+  padding: 40px 20px;
 }
 .div-foremail p {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 14px;
   font-weight: 300;
   padding: 15px;
@@ -627,10 +512,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-.fucku {
-  width: 300px;
-  height: 300px;
-}
 
 .devider {
   width: 20%;
@@ -641,9 +522,7 @@ section {
 
 .div-forh1 {
   display: flex;
-  flex-direction: row;
   height: 40%;
-  align-items: end;
   justify-content: center;
 }
 
@@ -659,15 +538,11 @@ section {
 
 .div-forh1 h1 {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 25px;
 }
 
 .div-forh1 input {
-  margin-left: 25px;
-  width: 85%;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
@@ -701,22 +576,18 @@ section {
 }
 
 .hahhh {
-  margin-left: 25px;
   width: 100%;
   display: flex;
   justify-content: start;
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 12px;
   font-weight: 300;
-  padding-left: 25px;
 }
 
 .hahhh2 {
   width: 100%;
   display: flex;
   justify-content: start;
-  margin-left: 50px;
 }
 
 .hahhh2 button {
@@ -730,7 +601,6 @@ section {
   font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
 }
 
 .hahhh2 button:hover {
@@ -738,7 +608,6 @@ section {
 }
 
 .textarea {
-  width: 92%;
   height: 44%;
   border: none;
   border-radius: 3px;
@@ -750,20 +619,16 @@ section {
 }
 
 .contactus1-div {
-  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 320px;
 }
 
 .conleft1-div {
   background-color: #703ffe;
   width: 600px;
   height: 300px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 .conright1-div {
@@ -775,14 +640,12 @@ section {
 }
 .div-forh21 h2 {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 20px;
   font-weight: 500;
   padding: 15px;
 }
 .div-foremail1 p {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 14px;
   font-weight: 300;
   padding: 15px;
@@ -835,7 +698,6 @@ section {
 
 .div-forh11 h1 {
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding-left: 25px;
@@ -882,7 +744,6 @@ input:focus1 {
   display: flex;
   justify-content: start;
   color: white;
-  font-family: 'Zen Dots', sans-serif;
   font-size: 12px;
   font-weight: 300;
   padding-left: 25px;
@@ -892,7 +753,6 @@ input:focus1 {
   width: 100%;
   display: flex;
   justify-content: start;
-  margin-left: 30px;
   margin-top: 70px;
   margin-bottom: 4px;
 }
@@ -908,7 +768,6 @@ input:focus1 {
   font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Zen Dots', sans-serif;
 }
 
 .hahhh21 button:hover {
@@ -917,18 +776,15 @@ input:focus1 {
 
 .clasica {
   margin-top: 30px;
-  margin-left: 30px;
 }
 
 .clasica h1 {
-  font-family: 'Zen Dots', sans-serif;
   color: white;
   font-weight: 400;
   line-height: 1.43rem;
 }
 
 .clasica h3 {
-  font-family: 'Readex Pro', sans-serif;
   color: white;
   font-weight: 400;
   line-height: 1.43rem;
@@ -948,13 +804,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .footer-logo {
-  max-width: 100px;
+  max-width: 150px;
   height: auto;
-  padding: 20px;
   display: block;
 }
 .footer-links {
@@ -969,7 +823,6 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.43rem;
-  font-family: 'Zen Dots', sans-serif;
   transition: color 0.3s;
 }
 
@@ -992,7 +845,6 @@ footer {
   margin-bottom: 60px;
   font-weight: 400;
   line-height: 1.43rem;
-  font-family: 'Readex Pro', sans-serif;
   color: gray;
 }
 

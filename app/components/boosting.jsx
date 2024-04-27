@@ -54,8 +54,8 @@ export default function Home() {
 
   return (
     <div className='flex flex-col md:flex-row max-w-screen-xl m-auto'>
-      <div className='flex lg:flex-wrap md:w-1/2 flex-col lg:flex-row'>
-        <div className='bg-pink rounded-2xl p-5 lg:flex-[0_0_50%] border-primary-blue border-4'>
+      <div className='flex lg:flex-wrap md:w-1/2 flex-col lg:flex-row h-fit'>
+        <div className='bg-pink rounded-2xl p-5 lg:flex-[0_0_50%] border-primary-blue border-[10px] h-fit'>
           <div className='flex items-center gap-3 mb-5'>
             <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
             <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-pink rounded-2xl p-5 lg:flex-[0_0_50%] border-primary-blue border-4'>
+        <div className='bg-pink rounded-2xl p-5 lg:flex-[0_0_50%] border-primary-blue border-[10px] h-fit'>
           <div className='flex items-center gap-3 mb-5'>
             <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
             <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
@@ -234,7 +234,7 @@ export default function Home() {
             </select>
           </div>
         </div>
-        <div className='bg-pink rounded-2xl p-5 lg:flex-[0_0_100%] flex-col lg:flex-row flex border-primary-blue border-4 h-fit'>
+        <div className='bg-pink rounded-2xl p-5 lg:flex-[0_0_100%] flex-col lg:flex-row flex border-primary-blue border-[10px] h-fit'>
           <div className='w-full lg:w-1/2'>
             <div className='flex items-center gap-3 mb-5'>
               <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
@@ -246,21 +246,12 @@ export default function Home() {
               className='block w-full max-w-64 m-auto mt-3 p-3 text-base font-ReadexPro font-light'
               name=''
               id=''
-              onChange={(e) => {
-                const { value } = e.target;
-                if (value == 1) setPrices(lpGain1Prices);
-                if (value == 2) setPrices(lpGain2Prices);
-                if (value == 3) setPrices(lpGain3Prices);
-              }}
             >
               <option className='font-light' value='1'>
-                10-19
+                Europe
               </option>
               <option className='font-light' value='2'>
-                20-24
-              </option>
-              <option className='font-light' value='3'>
-                25+
+                North America
               </option>
             </select>
           </div>
@@ -275,12 +266,6 @@ export default function Home() {
               className='block w-full max-w-64 m-auto mt-3 p-3 text-base font-ReadexPro font-light'
               name=''
               id=''
-              onChange={(e) => {
-                const { value } = e.target;
-                if (value == 1) setPrices(lpGain1Prices);
-                if (value == 2) setPrices(lpGain2Prices);
-                if (value == 3) setPrices(lpGain3Prices);
-              }}
             >
               <option className='font-light' value='1'>
                 Solo/Duo
@@ -292,12 +277,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='bg-pink rounded-2xl md:w-1/2 border-primary-blue border-4 p-5 h-fit'>
+      <div className='bg-pink rounded-2xl md:w-1/2 border-primary-blue border-[10px] p-5 h-fit'>
         <div className='flex items-center text-white w-fit mx-auto'>
           <IoOptionsOutline className='text-4xl text-black' />
           <h3>Boost customization</h3>
         </div>
-        <div className='max-w-md mx-auto font-ReadexPro text-white text-[17px] lg:text-lg font-medium leading-[1em] flex flex-col gap-10 my-10'>
+        <div className='max-w-lg mx-auto font-ReadexPro text-white text-[17px] lg:text-lg font-medium leading-[1em] flex flex-col gap-10 my-10'>
           <div className='flex items-center justify-between'>
             <p>Express order: +20%</p>
             <Switch
@@ -345,12 +330,12 @@ export default function Home() {
             <h2 className='text-lg leading-[1em] font-medium text-[19px] text-white m-5'>
               {total.toFixed(2)}€
             </h2>
-            <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-6 py-4 rounded-md text-white w-fit'>
+            <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-6 py-4 rounded-md text-white w-fit cursor-pointer'>
               PURCHASE
             </div>
-            <p className='font-ReadexPro font-medium text-base mt-5'>
+            <p className='font-ReadexPro font-medium text-base mt-5 text-red-600'>
               DISCLAIMER: If the mmr doesn&apos;t match displayed rank, price
-              has to be adjusted
+              has to be adjusted.
             </p>
           </>
         )}

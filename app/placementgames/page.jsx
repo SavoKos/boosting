@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from '../Navigation';
 import bg from './../../public/bg.png';
 import PlacementGamesLogic from '../components/placementGamesLogic';
+import Faq from '../components/faq';
+import Footer from '../components/footer';
 
 function PlacementGames() {
   return (
@@ -14,8 +16,8 @@ function PlacementGames() {
       }}
     >
       <Navigation active='placementgames' />
-      <div className='bg-transparent bg-opacity-20 p-3 border-gray-700 border-[1px] rounded-md m-auto block bg-white outline-none border-none max-w-screen-lg w-full my-32'>
-        <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-4 rounded-md text-white text-[35px] md:text-[45px] lg:text-5xl lg:font-medium lg:leading-[1.4em] w-full text-center py-10'>
+      <div className='bg-transparent bg-opacity-20 p-3 border-gray-700 border-[1px] rounded-[30px] m-auto block bg-white outline-none border-none max-w-screen-lg w-full my-32'>
+        <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-4 rounded-[30px] text-white text-[35px] md:text-[45px] lg:text-5xl lg:font-medium lg:leading-[1.4em] w-full text-center py-16'>
           Boosting
         </div>
       </div>
@@ -40,6 +42,8 @@ function PlacementGames() {
         </div>
       </div>
       <PlacementGamesLogic />
+      <Faq />
+      <Footer />
     </div>
   );
 }

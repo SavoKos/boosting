@@ -16,33 +16,19 @@ export default function PlacementGamesLogic() {
     7.49, 8.62,
   ];
 
-  const [slicedPrices, setSlicedPrices] = useState(prices);
-  console.log(rank, division, slicedPrices);
-
   useEffect(() => {
     if (rank > 7)
-      return setSlicedPrices(
-        [...prices].slice(0, rank * 1 + 3 + division * 1 + 1)
+      return setTotal(
+        prices[rank * 1 + 3 + division * 1] * numOfGames * additionalPercent
       );
-    setSlicedPrices([...prices].slice(0, rank * 1 + division * 1 + 1));
-  }, [rank, division, numOfGames]);
 
-  useEffect(() => {
-    if (slicedPrices.length < 1) return;
-
-    setTotal(
-      slicedPrices.reduce(
-        (accumulator, currentValue) => accumulator + currentValue
-      ) *
-        numOfGames *
-        additionalPercent
-    );
-  }, [slicedPrices, numOfGames, additionalPercent]);
+    setTotal(prices[rank * 1 + division * 1] * numOfGames * additionalPercent);
+  }, [rank, division, numOfGames, additionalPercent]);
 
   return (
     <div className='flex flex-col md:flex-row max-w-screen-xl m-auto'>
       <div className='flex md:w-1/2 flex-col lg:flex-row'>
-        <div className='bg-pink rounded-2xl p-5 border-primary-blue border-4 h-fit w-full'>
+        <div className='bg-pink rounded-2xl p-5 border-primary-blue border-[10px] h-fit w-full'>
           <div className='flex items-center gap-3 mb-5'>
             <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
             <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
@@ -135,7 +121,7 @@ export default function PlacementGamesLogic() {
           )}
         </div>
 
-        <div className='bg-pink rounded-2xl p-5 flex-col flex border-primary-blue border-4 h-fit w-full gap-5'>
+        <div className='bg-pink rounded-2xl p-5 flex-col flex border-primary-blue border-[10px] h-fit w-full gap-5'>
           <div className='w-full '>
             <div className='flex items-center gap-3 mb-5 '>
               <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
@@ -147,16 +133,12 @@ export default function PlacementGamesLogic() {
               className='block w-full max-w-64 m-auto mt-3 p-3 text-base font-ReadexPro font-light'
               name=''
               id=''
-              onChange={(e) => {}}
             >
               <option className='font-light' value='1'>
-                EU
+                Europe
               </option>
               <option className='font-light' value='2'>
-                ASIA
-              </option>
-              <option className='font-light' value='3'>
-                AMERICA
+                North America
               </option>
             </select>
           </div>
@@ -215,12 +197,12 @@ export default function PlacementGamesLogic() {
           </div>
         </div>
       </div>
-      <div className='bg-pink rounded-2xl md:w-1/2 border-primary-blue border-4 p-5 h-fit'>
+      <div className='bg-pink rounded-2xl md:w-1/2 border-primary-blue border-[10px] p-5 h-fit'>
         <div className='flex items-center text-white w-fit mx-auto'>
           <IoOptionsOutline className='text-4xl text-black' />
           <h3>Boost customization</h3>
         </div>
-        <div className='max-w-md mx-auto font-ReadexPro text-white text-[17px] lg:text-lg font-medium leading-[1em] flex flex-col gap-10 my-10'>
+        <div className='max-w-lg mx-auto font-ReadexPro text-white text-[17px] lg:text-lg font-medium leading-[1em] flex flex-col gap-10 my-10'>
           <div className='flex items-center justify-between'>
             <p>Express order: +20%</p>
             <Switch
@@ -257,31 +239,25 @@ export default function PlacementGamesLogic() {
             />
           </div>
         </div>
-        {slicedPrices.length >= 1 && (
-          <>
-            <div className='flex items-center text-white gap-3'>
-              <FaSackDollar className='text-3xl text-black' />
-              <h2 className='text-lg leading-[1em] font-medium text-[19px]'>
-                Total price
-              </h2>
-            </div>
-            <h2 className='text-lg leading-[1em] font-medium text-[19px] text-white m-5'>
-              {total.toFixed(2)}€
-            </h2>
-            <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-6 py-4 rounded-md text-white w-fit'>
-              PURCHASE
-            </div>
-            <p className='font-ReadexPro font-medium text-base mt-5'>
-              DISCLAIMER: If the mmr doesn&apos;t match displayed rank, price
-              has to be adjusted
-            </p>
-          </>
-        )}
-        {slicedPrices.length < 1 && (
-          <p className='font-ReadexPro font-medium text-2xl text-red-600'>
-            Error, Desired League must be greater than Current League
-          </p>
-        )}
+
+        <div className='flex items-center text-white gap-3'>
+          <FaSackDollar className='text-3xl text-black' />
+          <h2 className='text-lg leading-[1em] font-medium text-[19px]'>
+            Total price
+          </h2>
+        </div>
+        <h2 className='text-lg leading-[1em] font-medium text-[19px] text-white m-5'>
+          {total.toFixed(2)}€
+        </h2>
+        <div className='bg-gradient-to-r from-[#703ffe] to-[#b392ff] px-6 py-4 rounded-md text-white w-fit cursor-pointer'>
+          PURCHASE
+        </div>
+        <p className='font-ReadexPro font-medium text-base mt-5 text-red-600'>
+          DISCLAIMER: Up to Emerald, we guarantee an 80% win ratio, and for
+          Diamond and above, a 70% win ratio. Should we not meet these targets,
+          we&apos;ll provide win boosts equivalent to the number of losses
+          occurred. You won&apos;t experience any losses.
+        </p>
       </div>
     </div>
   );

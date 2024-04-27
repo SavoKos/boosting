@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useState } from 'react';
 import { IoClose, IoMenuOutline } from 'react-icons/io5';
 import NavItems from './components/NavItems';

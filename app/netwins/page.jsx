@@ -24,20 +24,32 @@ function page() {
       </div>
       <div className='flex max-w-screen-lg w-full justify-between m-auto mb-32 flex-col gap-20 md:flex-row md:gap-0'>
         <div className='flex flex-col items-center'>
-          <div className='w-28 h-28 bg-pink rounded-full'></div>
-          <p className='text-white text-lg lg:text-xl leading-[1em] font-medium mt-5'>
+          <div className='image-container1'>
+            <div className='center-image-div'>
+              <img className='move' src='/icona 1.png' alt='' />
+            </div>
+          </div>
+          <p className='text-white text-lg lg:text-xl leading-[1em] font-medium mt-14'>
             Division boosting
           </p>
         </div>
         <div className='flex flex-col items-center'>
-          <div className='w-28 h-28 bg-pink rounded-full'></div>
-          <p className='text-white text-lg lg:text-xl leading-[1em] font-medium mt-5'>
+          <div className='image-container1'>
+            <div className='center-image-div'>
+              <img className='move' src='/diamant.png' alt='' />
+            </div>
+          </div>
+          <p className='text-white text-lg lg:text-xl leading-[1em] font-medium mt-14'>
             Net Wins
           </p>
         </div>
         <div className='flex flex-col items-center'>
-          <div className='w-28 h-28 bg-pink rounded-full'></div>
-          <p className='text-white text-lg lg:text-xl leading-[1em] font-medium mt-5'>
+          <div className='image-container1'>
+            <div className='center-image-div'>
+              <img className='move' src='/icon1.png' alt='' />
+            </div>
+          </div>
+          <p className='text-white text-lg lg:text-xl leading-[1em] font-medium mt-14'>
             Placement Games
           </p>
         </div>

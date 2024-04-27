@@ -12,7 +12,9 @@ function Home() {
       <div className='main-div max-w-screen-xl w-full m-auto px-7'>
         <div className='flex items-center my-10'>
           <div className='text-1 w-full md:w-1/2 text-center md:text-left'>
-            <h1>League Of Legends Boosting</h1>
+            <h1 className='text-[42px] md:text-[50px]'>
+              League Of Legends Boosting
+            </h1>
             <h3 className='font-light font-ReadexPro mt-5'>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -185,23 +187,31 @@ function Home() {
             <div className='step-container'>
               <div className='step'>
                 <img src='/2.png' alt='Step 1' />
-                <h1>Step 1</h1>
-                <p>Step 1: Choose Producth</p>
+                <div className='flex flex-col text-left '>
+                  <h1 className='hidden sm:block'>Step 1</h1>
+                  <p>Step 1: Choose Product</p>
+                </div>
               </div>
               <div className='step'>
                 <img src='/3.png' alt='Step 2' />
-                <h1>Step 2</h1>
-                <p>Step 2: Add to Cart</p>
+                <div className='flex flex-col text-left '>
+                  <h1 className='hidden sm:block'>Step 2</h1>
+                  <p>Step 2: Add to Cart</p>
+                </div>
               </div>
               <div className='step'>
                 <img src='/4.png' alt='Step 3' />
-                <h1>Step 3</h1>
-                <p>Step 3: Enter Details</p>
+                <div className='flex flex-col text-left '>
+                  <h1 className='hidden sm:block'>Step 3</h1>
+                  <p>Step 3: Enter Details</p>
+                </div>
               </div>
               <div className='step'>
                 <img src='/5.png' alt='Step 4' />
-                <h1>Step 4</h1>
-                <p>Step 4: Confirm Payment</p>
+                <div className='flex flex-col text-left '>
+                  <h1 className='hidden sm:block'>Step 4</h1>
+                  <p>Step 4: Confirm Payment</p>
+                </div>
               </div>
             </div>
           </div>

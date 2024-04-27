@@ -238,6 +238,18 @@ export default function PlacementGamesLogic() {
               additionalPercent={additionalPercent}
             />
           </div>
+          <div className='flex items-center justify-between '>
+            <p>Role selection: FREE</p>
+            <Switch changeTotal={() => {}} additionalPercent={() => {}} />
+          </div>
+          <div className='flex items-center justify-between '>
+            <p>Summoner spells: FREE</p>
+            <Switch changeTotal={() => {}} additionalPercent={() => {}} />
+          </div>
+          <div className='flex items-center justify-between '>
+            <p>Offline mode: FREE</p>
+            <Switch changeTotal={() => {}} additionalPercent={() => {}} />
+          </div>
         </div>
 
         <div className='flex items-center text-white gap-3'>

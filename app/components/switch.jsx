@@ -5,9 +5,9 @@ function Switchui({ changeTotal, additionalPercent }) {
   const [enabled, setEnabled] = useState(false);
 
   const handleChange = () => {
+    setEnabled((prev) => !prev);
     if (enabled) changeTotal(additionalPercent * 1 - 0.2);
     if (!enabled) changeTotal(additionalPercent * 1 + 0.2);
-    setEnabled((prev) => !prev);
   };
 
   return (

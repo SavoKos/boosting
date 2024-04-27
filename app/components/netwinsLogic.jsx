@@ -79,7 +79,7 @@ export default function Netwins() {
               </option>
             </select>
           </div>
-          <div>
+          <div className={`${Number(rank) > 6 && 'hidden'}`}>
             <div className='flex items-center gap-3 my-5'>
               <div className='bg-primary-blue rounded-lg w-8 h-8'></div>
               <h3 className='text-white text-lg lg:text-[19px] font-medium leading-[1em] '>
@@ -116,17 +116,6 @@ export default function Netwins() {
                       Division I
                     </option>
                   </>
-                )}
-                {Number(rank) > 6 && (
-                  <option
-                    className='font-light'
-                    name=''
-                    id=''
-                    value='0'
-                    selected
-                  >
-                    Division I
-                  </option>
                 )}
               </select>
             </div>
@@ -243,6 +232,18 @@ export default function Netwins() {
               changeTotal={setAdditionalPercent}
               additionalPercent={additionalPercent}
             />
+          </div>
+          <div className='flex items-center justify-between '>
+            <p>Role selection: FREE</p>
+            <Switch changeTotal={() => {}} additionalPercent={() => {}} />
+          </div>
+          <div className='flex items-center justify-between '>
+            <p>Summoner spells: FREE</p>
+            <Switch changeTotal={() => {}} additionalPercent={() => {}} />
+          </div>
+          <div className='flex items-center justify-between '>
+            <p>Offline mode: FREE</p>
+            <Switch changeTotal={() => {}} additionalPercent={() => {}} />
           </div>
         </div>
 
